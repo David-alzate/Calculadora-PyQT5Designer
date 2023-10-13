@@ -1,0 +1,799 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>753</width>
+    <height>784</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QFrame" name="frame">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(51,51,50,255); </string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2" stretch="1,0">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QFrame" name="frameSuperior">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>60</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgba(51,51,50,255); 
+
+</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="styleSheet">
+             <string notr="true">
+    font: 26pt &quot;Arial&quot;;
+color: white;
+background-color: rgba(51,51,50,255); 
+
+</string>
+            </property>
+            <property name="text">
+             <string>Calculadora</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>469</width>
+              <height>17</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnMinimizar">
+            <property name="maximumSize">
+             <size>
+              <width>50</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">
+QPushButton {
+background-color: rgba(51,51,50,255); 
+border-radius:20px;
+
+}
+
+QPushButton:hover {
+    background-color: rgba(0, 0, 0, 0.2); 
+}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>iconos/minimizar-signo.png</normaloff>iconos/minimizar-signo.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>38</width>
+              <height>38</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnPequeno">
+            <property name="maximumSize">
+             <size>
+              <width>50</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">
+QPushButton {
+background-color: rgba(51,51,50,255); 
+border-radius:20px;
+
+}
+
+QPushButton:hover {
+    background-color: rgba(0, 0, 0, 0.2); 
+}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>iconos/minimizar.png</normaloff>iconos/minimizar.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>38</width>
+              <height>38</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnGrande">
+            <property name="maximumSize">
+             <size>
+              <width>50</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">
+QPushButton {
+background-color: rgba(51,51,50,255); 
+border-radius:20px;
+
+}
+
+QPushButton:hover {
+    background-color: rgba(0, 0, 0, 0.2); 
+}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>iconos/opcion-de-maximizar-tamano.png</normaloff>iconos/opcion-de-maximizar-tamano.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>38</width>
+              <height>38</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnCerrar">
+            <property name="maximumSize">
+             <size>
+              <width>50</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">
+QPushButton {
+background-color: rgba(51,51,50,255); 
+border-radius:20px;
+
+}
+
+QPushButton:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+
+}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>iconos/cerrar-el-simbolo-de-la-cruz-en-un-circulo.png</normaloff>iconos/cerrar-el-simbolo-de-la-cruz-en-un-circulo.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>38</width>
+              <height>38</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="frame_3">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_3" stretch="0,0,0">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="labelResultado1">
+            <property name="styleSheet">
+             <string notr="true">font: 75 36pt &quot;Arial&quot;;
+color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="labelResultado2">
+            <property name="styleSheet">
+             <string notr="true">font: 75 26pt &quot;Arial&quot;;
+color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <layout class="QGridLayout" name="gridLayout">
+            <property name="leftMargin">
+             <number>30</number>
+            </property>
+            <property name="topMargin">
+             <number>30</number>
+            </property>
+            <property name="rightMargin">
+             <number>30</number>
+            </property>
+            <property name="bottomMargin">
+             <number>30</number>
+            </property>
+            <property name="horizontalSpacing">
+             <number>10</number>
+            </property>
+            <property name="verticalSpacing">
+             <number>30</number>
+            </property>
+            <item row="0" column="0">
+             <widget class="QPushButton" name="btn7">
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+    font: 26pt &quot;Arial&quot;;
+color: white;
+background-color: rgba(51,51,50,255); 
+
+}
+
+QPushButton:hover {
+    background-color: rgba(0, 0, 0, 0.2); 
+}</string>
+              </property>
+              <property name="text">
+               <string>7</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QPushButton" name="btn8">
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+    font: 26pt &quot;Arial&quot;;
+color: white;
+background-color: rgba(51,51,50,255); 
+
+}
+
+QPushButton:hover {
+    background-color: rgba(0, 0, 0, 0.2); 
+}</string>
+              </property>
+              <property name="text">
+               <string>8</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="2">
+             <widget class="QPushButton" name="btn9">
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+    font: 26pt &quot;Arial&quot;;
+color: white;
+background-color: rgba(51,51,50,255); 
+
+}
+
+QPushButton:hover {
+    background-color: rgba(0, 0, 0, 0.2); 
+}</string>
+              </property>
+              <property name="text">
+               <string>9</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="3">
+             <widget class="QPushButton" name="btnMas">
+              <property name="styleSheet">
+               <string notr="true">
+QPushButton {
+    font: 26pt &quot;Arial&quot;;
+color: white;
+	background-color:rgba(43,80,170,255);
+
+
+}
+
+QPushButton:hover {
+    background-color: rgba(33, 60, 150, 255); 
+
+}</string>
+              </property>
+              <property name="text">
+               <string>+</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QPushButton" name="btn4">
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+    font: 26pt &quot;Arial&quot;;
+color: white;
+background-color: rgba(51,51,50,255); 
+
+}
+
+QPushButton:hover {
+    background-color: rgba(0, 0, 0, 0.2); 
+}</string>
+              </property>
+              <property name="text">
+               <string>4</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QPushButton" name="btn5">
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+    font: 26pt &quot;Arial&quot;;
+color: white;
+background-color: rgba(51,51,50,255); 
+
+}
+
+QPushButton:hover {
+    background-color: rgba(0, 0, 0, 0.2); 
+}</string>
+              </property>
+              <property name="text">
+               <string>5</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="2">
+             <widget class="QPushButton" name="btn6">
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+    font: 26pt &quot;Arial&quot;;
+color: white;
+background-color: rgba(51,51,50,255); 
+
+}
+
+QPushButton:hover {
+    background-color: rgba(0, 0, 0, 0.2); 
+}</string>
+              </property>
+              <property name="text">
+               <string>6</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="3">
+             <widget class="QPushButton" name="btnMenos">
+              <property name="styleSheet">
+               <string notr="true">
+QPushButton {
+    font: 26pt &quot;Arial&quot;;
+color: white;
+	background-color:rgba(43,80,170,255);
+
+
+}
+
+QPushButton:hover {
+    background-color: rgba(33, 60, 150, 255); 
+
+}</string>
+              </property>
+              <property name="text">
+               <string>-</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QPushButton" name="btn1">
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+    font: 26pt &quot;Arial&quot;;
+color: white;
+background-color: rgba(51,51,50,255); 
+
+}
+
+QPushButton:hover {
+    background-color: rgba(0, 0, 0, 0.2); 
+}</string>
+              </property>
+              <property name="text">
+               <string>1</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="QPushButton" name="btn2">
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+    font: 26pt &quot;Arial&quot;;
+color: white;
+background-color: rgba(51,51,50,255); 
+
+}
+
+QPushButton:hover {
+    background-color: rgba(0, 0, 0, 0.2); 
+}</string>
+              </property>
+              <property name="text">
+               <string>2</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="2">
+             <widget class="QPushButton" name="btn3">
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+    font: 26pt &quot;Arial&quot;;
+color: white;
+background-color: rgba(51,51,50,255); 
+
+}
+
+QPushButton:hover {
+    background-color: rgba(0, 0, 0, 0.2); 
+}</string>
+              </property>
+              <property name="text">
+               <string>3</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="3">
+             <widget class="QPushButton" name="btnDividir">
+              <property name="styleSheet">
+               <string notr="true">
+QPushButton {
+    font: 26pt &quot;Arial&quot;;
+color: white;
+	background-color:rgba(43,80,170,255);
+
+
+}
+
+QPushButton:hover {
+    background-color: rgba(33, 60, 150, 255); 
+
+}</string>
+              </property>
+              <property name="text">
+               <string>/</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="0">
+             <widget class="QPushButton" name="btnSigno">
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+    font: 26pt &quot;Arial&quot;;
+color: brack;
+background-color:rgba(213,213,210,255); 
+
+}
+
+QPushButton:hover {
+    background-color: rgba(183, 183, 180, 255); 
+}</string>
+              </property>
+              <property name="text">
+               <string>+/-</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="1">
+             <widget class="QPushButton" name="btn0">
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+    font: 26pt &quot;Arial&quot;;
+color: white;
+background-color: rgba(51,51,50,255); 
+
+}
+
+QPushButton:hover {
+    background-color: rgba(0, 0, 0, 0.2); 
+}</string>
+              </property>
+              <property name="text">
+               <string>0</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="3">
+             <widget class="QPushButton" name="btnProducto">
+              <property name="styleSheet">
+               <string notr="true">
+QPushButton {
+    font: 26pt &quot;Arial&quot;;
+color: white;
+	background-color:rgba(43,80,170,255);
+
+
+}
+
+QPushButton:hover {
+    background-color: rgba(33, 60, 150, 255); 
+
+}</string>
+              </property>
+              <property name="text">
+               <string>x</string>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="0">
+             <widget class="QPushButton" name="btnSen">
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+    font: 26pt &quot;Arial&quot;;
+color: brack;
+background-color:rgba(213,213,210,255); 
+
+}
+
+QPushButton:hover {
+    background-color: rgba(183, 183, 180, 255); 
+}</string>
+              </property>
+              <property name="text">
+               <string>Sen</string>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="1">
+             <widget class="QPushButton" name="btnCos">
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+    font: 26pt &quot;Arial&quot;;
+color: brack;
+background-color:rgba(213,213,210,255); 
+
+}
+
+QPushButton:hover {
+    background-color: rgba(183, 183, 180, 255); 
+}</string>
+              </property>
+              <property name="text">
+               <string>Cos</string>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="2">
+             <widget class="QPushButton" name="btnTan">
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+    font: 26pt &quot;Arial&quot;;
+color: brack;
+background-color:rgba(213,213,210,255); 
+
+}
+
+QPushButton:hover {
+    background-color: rgba(183, 183, 180, 255); 
+}</string>
+              </property>
+              <property name="text">
+               <string>Tan</string>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="3">
+             <widget class="QPushButton" name="btnBorrar">
+              <property name="styleSheet">
+               <string notr="true">
+QPushButton {
+    font: 26pt &quot;Arial&quot;;
+color: white;
+	background-color:rgba(43,80,170,255);
+
+
+}
+
+QPushButton:hover {
+    background-color: rgba(33, 60, 150, 255); 
+
+}</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset>
+                <normaloff>iconos/borrar1.png</normaloff>iconos/borrar1.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>38</width>
+                <height>38</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+            <item row="5" column="0">
+             <widget class="QPushButton" name="btnMax">
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+    font: 26pt &quot;Arial&quot;;
+color: brack;
+background-color:rgba(213,213,210,255); 
+
+}
+
+QPushButton:hover {
+    background-color: rgba(183, 183, 180, 255); 
+}</string>
+              </property>
+              <property name="text">
+               <string>Max</string>
+              </property>
+             </widget>
+            </item>
+            <item row="5" column="1">
+             <widget class="QPushButton" name="btnMin">
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+    font: 26pt &quot;Arial&quot;;
+color: brack;
+background-color:rgba(213,213,210,255); 
+
+}
+
+QPushButton:hover {
+    background-color: rgba(183, 183, 180, 255); 
+}</string>
+              </property>
+              <property name="text">
+               <string>Min</string>
+              </property>
+             </widget>
+            </item>
+            <item row="5" column="2">
+             <widget class="QPushButton" name="btnMedia">
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+    font: 26pt &quot;Arial&quot;;
+color: brack;
+background-color:rgba(213,213,210,255); 
+
+}
+
+QPushButton:hover {
+    background-color: rgba(183, 183, 180, 255); 
+}</string>
+              </property>
+              <property name="text">
+               <string> X̅</string>
+              </property>
+             </widget>
+            </item>
+            <item row="5" column="3">
+             <widget class="QPushButton" name="btnIgual">
+              <property name="styleSheet">
+               <string notr="true">
+QPushButton {
+    font: 26pt &quot;Arial&quot;;
+color: white;
+	background-color:rgba(43,80,170,255);
+
+
+}
+
+QPushButton:hover {
+    background-color: rgba(33, 60, 150, 255); 
+
+}</string>
+              </property>
+              <property name="text">
+               <string>=</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
